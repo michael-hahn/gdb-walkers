@@ -38,6 +38,6 @@ def check(name, value, taint):
 	   value_type.code == gdb.TYPE_CODE_DECFLOAT:
 		taint_size = num_taint(taint)
 		if taint_size > 1:
-			explain += "{}: a heap value of a primitive type {}, but it containts {} taints".format(name, value_type.name, taint_size)
+			explain += "{}: a heap value of a primitive type {}, but it contains {} taints".format(name, value_type.name, taint_size)
 	return explain
 	
